@@ -9,19 +9,16 @@ function Calculator() {
 
   const handleButtonClick = (value) => {
     if (value === "=") {
-      // Calculer le résultat lorsque "=" est cliqué
       try {
-        const evalResult = math.evaluate(expression);
+        const evalResult = eval(expression);
         setResult(evalResult.toString());
       } catch (error) {
         setResult("Error");
       }
     } else if (value === "C") {
-      // Effacer l'expression lorsqu'on clique sur "C"
       setExpression("");
       setResult("");
     } else {
-      // Ajouter la valeur du bouton à l'expression actuelle
       setExpression((prevExpression) => prevExpression + value);
     }
   };
@@ -30,7 +27,6 @@ function Calculator() {
     <div className="calculator">
       <Display expression={expression} result={result} />
       <div className="buttons">
-        {/* Boutons numériques */}
         {[...Array(10).keys()].map((num) => (
           <Button
             key={num}
