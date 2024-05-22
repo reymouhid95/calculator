@@ -33,7 +33,6 @@ function Calculator() {
             onClick={handleButtonClick}
           />
         ))}
-        {/* Autres boutons */}
         <Button value="+" onClick={handleButtonClick} />
         <Button value="-" onClick={handleButtonClick} />
         <Button value="*" onClick={handleButtonClick} />
