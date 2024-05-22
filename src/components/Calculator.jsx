@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Display from "./Display";
 import Button from "./Button";
-import math from "mathjs";
 
 function Calculator() {
   const [expression, setExpression] = useState("");
