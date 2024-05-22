@@ -1,0 +1,57 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.display {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.expression {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.result {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+.button {
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button[value="="] {
+  background-color: #f39c12;
+  color: #fff;
+}
+
+.button[value="C"] {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #eee;
+}
